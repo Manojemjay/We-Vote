@@ -34,7 +34,7 @@ public class Userlogin extends HttpServlet {
 			ResultSet rs = ps.executeQuery();
 			if(rs.next())
 			{
-				RequestDispatcher rd = request.getRequestDispatcher("adminWelcome.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("UserWelcome.jsp");
 				rd.forward(request, response);
 			}
 			else {
